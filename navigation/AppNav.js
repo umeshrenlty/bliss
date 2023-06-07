@@ -21,7 +21,7 @@ const AppNav = () => {
       </View>
     );
   }
-  console.log(userToken,"first");
+  console.log(userToken, 'first');
   return (
     <NavigationContainer>
       {userToken !== null ? <AppStack /> : <AuthStack />}

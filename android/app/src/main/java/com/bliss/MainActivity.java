@@ -1,4 +1,5 @@
 package com.bliss;
+
 import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;

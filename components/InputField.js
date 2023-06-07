@@ -15,25 +15,24 @@ const InputField = ({
   filedButtonLabel,
   filedButtonFunction,
 }) => {
+  console.log(inputType, 'Input TYpe');
   return (
     <View style={styles.container}>
       {icon}
-      {
-        (inputType = 'password' ? (
-          <TextInput
-            placeholder={label}
-            keyboardType={keyboardType}
-            style={{flex: 1, paddingVertical: 0}}
-            secureTextEntry={true}
-          />
-        ) : (
-          <TextInput
-            placeholder={label}
-            keyboardType={keyboardType}
-            style={{flex: 1, paddingVertical: 0}}
-          />
-        ))
-      }
+      {label === 'Password' ? (
+        <TextInput
+          placeholder={label}
+          keyboardType={keyboardType}
+          style={{flex: 1, paddingVertical: 0}}
+          secureTextEntry={true}
+        />
+      ) : (
+        <TextInput
+          placeholder={label}
+          keyboardType={keyboardType}
+          style={{flex: 1, paddingVertical: 0}}
+        />
+      )}
       <TouchableOpacity onPress={filedButtonFunction}>
         <Text style={{color: '#ad40af', fontWeight: '700'}}>
           {filedButtonLabel}

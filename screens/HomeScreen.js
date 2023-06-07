@@ -45,7 +45,6 @@ const HomeScreen = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#fff', marginBottom: 10}}>
-      
       <ScrollView style={{padding: 20}} showsVerticalScrollIndicator={false}>
         <View
           style={{
@@ -170,7 +169,7 @@ const HomeScreen = ({navigation}) => {
             you’ll find the everyday care that dermatologists recommend.
           </Text> */}
           <View style={[styles.imgCard, styles.shadow]}>
-            <TouchableOpacity onPress={() => navigation.navigate('Basic')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Bliss')}>
               <View>
                 <Image
                   source={require('../assets/homescreen/skin01.jpg')}
