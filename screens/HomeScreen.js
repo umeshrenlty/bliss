@@ -53,7 +53,7 @@ const HomeScreen = ({navigation}) => {
             marginBottom: 20,
           }}>
           <Text style={{fontFamily: 'Roboto-Bold', fontSize: 16}}>
-            Hello Umesh Sahoo
+            Hello Aneesha Dutta
           </Text>
           <TouchableOpacity onPress={() => navigation.openDrawer()}>
             <ImageBackground
@@ -180,7 +180,7 @@ const HomeScreen = ({navigation}) => {
             </TouchableOpacity>
           </View>
           <View style={[styles.imgCard, styles.shadow]}>
-            <TouchableOpacity onPress={() => navigation.navigate('Dry')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Bliss')}>
               <View>
                 <Image
                   source={require('../assets/homescreen/skin03.jpg')}
@@ -191,7 +191,7 @@ const HomeScreen = ({navigation}) => {
             </TouchableOpacity>
           </View>
           <View style={[styles.imgCard, styles.shadow]}>
-            <TouchableOpacity onPress={() => navigation.navigate('Hair')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Bliss')}>
               <View>
                 <Image
                   source={require('../assets/homescreen/skin04.jpeg')}
@@ -202,7 +202,7 @@ const HomeScreen = ({navigation}) => {
             </TouchableOpacity>
           </View>
           <View style={[styles.imgCard, styles.shadow]}>
-            <TouchableOpacity onPress={() => navigation.navigate('Tattoos')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Bliss')}>
               <View>
                 <Image
                   source={require('../assets/homescreen/skin02.jpg')}
